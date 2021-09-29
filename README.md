@@ -195,7 +195,7 @@ ___
  ### Copy the file that you want to dockerize : 
 We want to run a simple node application. 
 
-## step 1:
+### step 1:
 create the dockerfile. 
 - The dockerfile is a set of instruction on how to run the application. 
 
@@ -215,7 +215,7 @@ EXPOSE 3000
 CMD ["node", "app.js"]
 ```
 
-Step 2. 
+### Step 2. 
 
 - Then run `docker build -t sremichael/sre_node_app:v1 .`
 
