@@ -131,11 +131,11 @@ Docker pull `name_of_account`/[name of image]:version
 - Docker push name_of_the_image
 
 - removing images
-docker rmi [`CONTAINER ID`]
+Docker rmi [`CONTAINER ID`]
 #### docker Ghost image 
 
 - lets see an example of an image(called ghost)
-`docker run -d -p 2368:2368 ghost`
+`Docker run -d -p 2368:2368 ghost`
 
 #### Common Docker commands 
 
@@ -170,7 +170,7 @@ to pass this error, you must change the alias:\
 
 #### To check the instance 
 `docker ps`
-#### running the instance
+#### Running the instance
 `docker run -d -p 80:80 nameconv`
 
 #### Accessing the instance 
@@ -192,10 +192,10 @@ ___
 - docker build
 - docker run 
 
- ### Copy the file that you want to dockerize : 
+### Copy the file that you want to dockerize : 
 We want to run a simple node application. 
 
-### step 1:
+#### step 1:
 create the dockerfile. 
 - The dockerfile is a set of instruction on how to run the application. 
 
@@ -215,7 +215,7 @@ EXPOSE 3000
 CMD ["node", "app.js"]
 ```
 
-### Step 2. 
+#### Step 2. 
 
 - Then run `docker build -t sremichael/sre_node_app:v1 .`
 
